@@ -5,7 +5,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='fri', hour=0)
+@sched.scheduled_job('cron', day_of_week='thu', hour=0, minute=10)
 def scheduled_job():
     c = config.load()
 
